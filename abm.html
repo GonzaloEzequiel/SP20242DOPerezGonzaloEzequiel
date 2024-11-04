@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 SP Pérez, Gonzalo Ezequiel</title>
+    <link rel="stylesheet" href="./abm.css">
+    <script type="module" src="./abm.js"></script>
+</head>
+<body>
+    <div id="formLista">
+        <div class="container-horizontal">
+            <div class="container-vertical">
+                <h2>Formulario Lista</h2>
+                <form>
+                    <table>
+                        <thead>
+                            <th>ID</th>
+                            <th>Modelo</th>
+                            <th>Año Fabricación</th>
+                            <th>Vel. Máxima</th>
+                            <th>Cantidad Puertas</th>
+                            <th>Asientos</th>
+                            <th>Carga</th>
+                            <th>Autonomía</th>
+                            <th>Modificar</th>
+                            <th>Eliminar</th>
+                        </thead>
+                        <tbody id="tabla_cuerpo">
+                        </tbody>
+                    </table>
+                    <input type="button" id="btn_agregar" value="Agregar Elemento">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="formABM">
+        <div class="container-horizontal">
+            <div class="container-vertical">
+                <h2 id="titulo_ABM">Formulario ABM</h2>
+                <h4 id="operacion_ABM"></h4>
+                <form>
+                    <label class="form_label">ID: </label>
+                    <input class="form_input" type="text" name="frm_id" id="frm_id" required disabled>
+                    <br>
+                    <label class="form_label">Modelo: </label>
+                    <input class="form_input" type="text" name="frm_modelo" id="frm_modelo" required>
+                    <br>
+                    <label class="form_label">Año Fabricación: </label>
+                    <input class="form_input" type="text" name="frm_apellido" id="frm_anoFabricacion" required>
+                    <br>
+                    <label class="form_label">Vel. Máxima: </label>
+                    <input class="form_input" type="text" name="frm_velMax" id="frm_velMax">
+                    <br>
+                    <label class="form_label">Tipo: </label>
+                    <select class="form_input" name="frm_tipo" id="frm_tipo">
+                        <option value="" disabled selected>Seleccionar</option>
+                        <option value="Auto">Auto</option>
+                        <option value="Camion">Camion</option>
+                    </select>
+                    <br>
+                    <label class="form_label" id="lbl_atr3">Atributo 3: </label>
+                    <input class="form_input" type="text" id="frm_atr3">
+                    <br>
+                    <label class="form_label" id="lbl_atr4">Atributo 4: </label>
+                    <input class="form_input" type="text" id="frm_atr4">
+                    <br>
+                    <input class="form_label" type="button" id="btn_aceptar" value="Aceptar">
+                    <input class="form_input" type="button" id="btn_cancelar" value="Cancelar">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="spinner">
+        <div id="spinner-container-vert">
+            <h2 id="titulo_spinner"></h2>
+            <img src="https://thoughtsonprogramming.wordpress.com/wp-content/uploads/2018/11/spinner.gif"/>
+        </div>
+    </div>
+</body>
+</html>
